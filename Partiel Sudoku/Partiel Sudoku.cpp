@@ -17,7 +17,7 @@ int main()
     char* inputs = "";
     while (oCurrentScene.isAppRunning) {
         //EVENTS
-        inputs = getPlayerInputs(inputs)
+        inputs = getPlayerInputs(&inputs)
             oCurrentScene.update(oCurrentScene, inputs)
             //DISPLAY
             oCurrentScene.display(oCurrentScene)
@@ -29,9 +29,9 @@ int main()
 }
 
 
-void getPlayerInputs() {
+void getPlayerInputs(char** inputs) {
     char cKeyPress = 'a';
     char cKeyPressed = _getch();
-    inputs = realloc(sizeof(char) * PlayerInputsSize + 1);
+    *inputs = realloc(sizeof(char) * inputsSize + 1);
     PlayerInputsSize++;
     }
