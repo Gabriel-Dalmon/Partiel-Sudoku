@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Partiel Sudoku.cpp" />
+    <ClCompile Include="src\Actors\Board.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src/Board.cpp" />
