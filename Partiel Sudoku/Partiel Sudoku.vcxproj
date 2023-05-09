@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="Partiel Sudoku.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src/Board.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
